@@ -12,7 +12,8 @@ import javax.annotation.Resource;
  */
 @Service("UserService")
 public class UserServiceImpl implements IUserService {
-    
+
+    @Resource
     private UserMapper userMapper;
 
     public User getUserById(int userId) {
